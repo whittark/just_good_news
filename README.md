@@ -11,4 +11,7 @@ Select <b>Save article</b> to collect your favorite stories. To access favorites
 ## About Just Good News
 Just Good News (JGN) uses NodeJS, Express, and Express Handlebars, and Bootstrap elements to render a single-page, templatized layout. JGN also uses Axios and Cheerio to scrape and render articles on the page. A Mongoose DB saves scraped articles and stores your favorites.
 
+## Disclaimer
+The views expressed in the articles scraped are not necessarily shared by this developer; I have no way of knowing what articles will be posted and ultimately scraped. Don't shoot the messenger! :-)
+
 ## Heroku Deployment
