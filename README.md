@@ -1,5 +1,6 @@
 # Just Good News
 Tired of headlines that get you down? Visit Just Good News for uplifting national news articles.
+https://cryptic-fjord-94874.herokuapp.com/
 
 ## View Articles
 From the landing page, view the latest feel good articles from Huffpost. Leave an encouraging comment for others to find.
@@ -15,3 +16,4 @@ Just Good News (JGN) uses NodeJS, Express, and Express Handlebars, and Bootstrap
 The views expressed in the articles scraped are not necessarily shared by this developer; I have no way of knowing what articles will be posted and ultimately scraped. Don't shoot the messenger! :-)
 
 ## Heroku Deployment
+View the app here: https://cryptic-fjord-94874.herokuapp.com/ 
