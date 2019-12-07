@@ -17,16 +17,18 @@
   <br>
   <div id="wrapper">
     <div id="articles">
+      <hr>
       {{#each articles}}
         {{#if saved}}
           <h3>{{title}}</h3>
           <button class="delete btn btn-danger" data-id="{{id}}"> Delete article </button>
           <br>
-          <a href={{link}}>Link</a>
+          <a href={{link}} style="font-size:small">View Full Article</a>
           <p>{{summary}}</p>
           {{#each note}}
-            <p>Comment: {{body}}</p>
+            <p style="font-style:italic; font-size:small">Comment: {{body}}</p>
               <button type="button" class="delComment btn btn-warning" data-id="{{id}}">Delete comment</button>
+            <br>
           {{/each}}
           <form class="comment" data-id="{{id}}">
             <div class="form-group">
@@ -34,6 +36,8 @@
               <textarea class="form-control" class="body" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
+             <hr>
+             <br>
           </form>
         {{/if}}
       {{/each}}

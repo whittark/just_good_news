@@ -30,12 +30,15 @@
               <p>Article saved!</p>
             {{/if}}
             <br>
-            <a href={{link}}>Link</a>
+            <a href={{link}} style="font-size:small">View Full Article</a>
             <p class="card-text">{{summary}}</p>
             {{#each note}}
-              <p>Comment: {{body}}</p>
+            <br>
+              <p style="font-style:italic; font-size:small">Comment: {{body}}</p>
               <button type="button" class="btn btn-primary" data-id="{{id}}">Delete comment</button>
+              <br>
             {{/each}}
+            <br>
             <form class="comment" data-id="{{id}}">
               <div class="form-group">
                 <label for="note">Leave a comment</label>
