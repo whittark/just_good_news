@@ -1,0 +1,43 @@
+<div class="jumbotron card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+  <div class="text-white text-center py-5 px-4">
+    <div>
+      <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Just Good News</strong></h2>
+      <h3>Your happy stuff.</h3>
+      <p class="mx-5 mb-5">View the feel good articles you've saved; delete if you gotta.
+      </p>
+      <a class="navbar-brand" href="/">HOME</a>
+      <a class="navbar-brand" href="/savedarticles">SAVED ARTICLES</a>
+    </div>
+  </div>
+
+<div class="jumbotron card card-image" style="background-color: white">
+  <div class="text-white text-center py-5 px-4">
+    <h3 style="color: rgb(12, 184, 161)">Saved Articles</h3>
+  </div>
+  <br>
+  <div id="wrapper">
+    <div id="articles">
+      {{#each articles}}
+        {{#if saved}}
+          <h3>{{title}}</h3>
+          <button class="delete btn btn-danger" data-id="{{id}}"> Delete article </button>
+          <br>
+          <a href={{link}}>Link</a>
+          <p>{{summary}}</p>
+          {{#each note}}
+            <p>Comment: {{body}}</p>
+              <button type="button" class="delComment btn btn-warning" data-id="{{id}}">Delete comment</button>
+          {{/each}}
+          <form class="comment" data-id="{{id}}">
+            <div class="form-group">
+              <label for="note">Leave a comment</label>
+              <textarea class="form-control" class="body" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        {{/if}}
+      {{/each}}
+    </div>
+  </div> 
+
+</div>
